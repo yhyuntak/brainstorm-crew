@@ -1,40 +1,10 @@
-# 개발 워크플로우
+# 백로그 관리
 
-> Git 커밋 규칙 + 백로그 관리
-
----
-
-## Git 워크플로우
-
-**현재 전략**: `main` 브랜치에 직접 작업 및 푸시
-
-```bash
-# 작업 후 커밋 & 푸시
-git add .
-git commit -m "feat: 새 기능 구현"
-git push origin main
-```
+> 백로그 구조 및 작업 플로우
 
 ---
 
-## 커밋 메시지 규칙
-
-```
-<type>: <description>
-
-# 타입
-feat:     새 기능
-fix:      버그 수정
-refactor: 리팩토링
-docs:     문서 변경
-chore:    기타 (의존성, 설정 등)
-```
-
----
-
-## 백로그 관리
-
-### 폴더 구조
+## 폴더 구조
 
 ```
 docs/backlog/
@@ -44,7 +14,9 @@ docs/backlog/
 └── done/            # 완료
 ```
 
-### 파일명 규칙
+---
+
+## 파일명 규칙
 
 ```
 {priority}-{domain}-{id}-{slug}.md
@@ -52,13 +24,16 @@ docs/backlog/
 
 예: `p1-BE-001-change-rate-api.md`
 
-### 우선순위
+---
+
+## 우선순위
 
 | 우선순위 | 의미 |
 |---------|------|
 | P0 | 외부 공개 준비 (필수) |
 | P1 | 최우선 |
 | P2 | 중요 |
+| P3 | 탐색적/유지보수 |
 
 ---
 
@@ -113,3 +88,7 @@ mv docs/backlog/in-progress/p1-BE-001-*.md docs/backlog/done/
 # - 현황 테이블 개수 갱신
 # - Last Updated 날짜 갱신
 ```
+
+---
+
+**Last Updated**: 2026-01-09
